@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARVAGYA Login</title>
+    <style>
+        /* General Reset */
+        body, h1, p, a, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background: linear-gradient(135deg, #FCBF01, #FC6A01);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            color: white;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1920x1080/?education,learning') no-repeat center/cover;
+            filter: blur(8px) brightness(0.7);
+            z-index: -1;
+        }
+
+        /* Container */
+        .container {
+            max-width: 450px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #FC6A01, #FCBF01);
+            border-bottom: 3px solid #FC6A01;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main Login Section */
+        .login-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .login-container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-field {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #FC6A01;
+            box-shadow: 0 0 10px rgba(252, 106, 1, 0.4);
+        }
+
+        .login-button {
+            padding: 12px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #FCBF01, #FC6A01);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .login-button:hover {
+            background: linear-gradient(135deg, #FC6A01, #FCBF01);
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(252, 106, 1, 0.4);
+        }
+
+        .social-login {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .social-button {
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .social-button.google {
+            background: #4285F4;
+            color: white;
+        }
+
+        .social-button.google:hover {
+            background: #3367D6;
+            transform: scale(1.1);
+        }
+
+        .social-button.microsoft {
+            background: #2F2F2F;
+            color: white;
+        }
+
+        .social-button.microsoft:hover {
+            background: #1A1A1A;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: #FC6A01;
+            text-decoration: none;
+            margin: 0 5px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">SARVAGYA</div>
+        </header>
+
+        <!-- Login Form Section -->
+        <main class="login-container">
+            <h1>Welcome Back</h1>
+            <p>Please log in to your account to continue</p>
+            <form class="login-form">
+                <input type="text" placeholder="Username" class="input-field" required>
+                <input type="password" placeholder="Password" class="input-field" required>
+                <button type="submit" class="login-button">Login</button>
+                <div class="social-login">
+                    <button class="social-button google">Google</button>
+                    <button class="social-button microsoft">Microsoft</button>
+                </div>
+            </form>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="#">Contact Support</a>
+            </p>
+        </footer>
+    </div>
+
+</body></html>
